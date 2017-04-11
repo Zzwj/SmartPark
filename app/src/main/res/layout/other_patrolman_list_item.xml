@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppLayoutStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/other_patrolman_idot_iv"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="left"
+                android:src="@drawable/app_blue_circle_ico"
+                />
+
+            <TextView
+                android:id="@+id/other_patrolman_station_tv"
+                android:layout_below="@+id/other_patrolman_idot_iv"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="IDC中心"
+                android:textSize="14sp"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/other_patrolman_status_iv"
+                android:layout_alignTop="@+id/other_patrolman_idot_iv"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已巡更"
+                android:textSize="14sp"
+
+                />
+
+            <TextView
+                android:id="@+id/other_patrolman_time_tv"
+                android:layout_alignBottom="@+id/other_patrolman_station_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016年12月31日"
+                android:textSize="14sp"
+                />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

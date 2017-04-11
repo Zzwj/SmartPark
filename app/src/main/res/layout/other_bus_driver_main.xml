@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bus_driver_top_rl"
+        style="@style/AppHead">
+
+        <LinearLayout
+            android:id="@+id/bus_driver_black"
+            style="@style/AppBlackLayout">
+
+            <ImageView style="@style/AppBlackImage" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="公车司机"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_txt_title_big" />
+
+        <TextView
+            android:id="@+id/bus_driver_sub"
+            style="@style/AppTitleTvClickStyle"
+            android:layout_alignParentRight="true"
+            android:text="预约信息" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.xcoder.smartpark.widget.view.CircleImageView
+                    android:id="@+id/bus_driver_head"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/use_guests_ico" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="车辆信息"
+                    android:textColor="@color/app_green_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/bus_driver_det"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="接客专用车 京A 58365 黑色"
+                    android:textColor="@color/app_green_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/bus_driver_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="奔驰 S350 自动挡"
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/bus_driver_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="本车为接待专用车辆 非接待用途勿预约"
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/bus_driver_driver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/app_user_green_ico"
+                    android:drawablePadding="5dp"
+                    android:text=""
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/bus_driver_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/tou_phone_ico"
+                    android:drawablePadding="5dp"
+                    android:text=""
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/bus_driver_last_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:text="2017-01-01"
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent">
+
+                    <TextView
+                        android:id="@+id/bus_driver_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/app_button_green_selector"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="上传车辆位置"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/bus_driver_msglv2"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.xcoder.smartpark.widget.view.CircleImageView
+                android:id="@+id/bus_driver_head2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/use_guests_ico" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="车辆信息"
+                android:textColor="@color/app_green_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/bus_driver_det2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="接客专用车 京A 58365 黑色"
+                android:textColor="@color/app_green_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/bus_driver_car2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="奔驰 S350 自动挡"
+                android:textColor="@color/app_txt_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/bus_driver_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="本车为接待专用车辆 非接待用途勿预约"
+                android:textColor="@color/app_txt_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/bus_driver_driver2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/app_user_green_ico"
+                android:drawablePadding="5dp"
+                android:text=""
+                android:textColor="@color/app_txt_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/bus_driver_phone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/tou_phone_ico"
+                android:drawablePadding="5dp"
+                android:text=""
+                android:textColor="@color/app_txt_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/bus_driver_last_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="5dp"
+                android:text="2017-01-01"
+                android:textColor="@color/app_txt_gray"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent">
+
+                <TextView
+                    android:id="@+id/bus_driver_location2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/app_button_green_selector"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="上传车辆位置"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>

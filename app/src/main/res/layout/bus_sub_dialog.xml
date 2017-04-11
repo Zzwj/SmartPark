@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_dialog_bg_shape"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="预约确认 "
+        android:textColor="@color/app_txt"
+        android:textSize="@dimen/app_txt_title_big" />
+
+    <View style="@style/App_Line_Style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/sub_dialog_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_txt"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sub_dialog_shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/sub_dialog_name"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/sub_dialog_name"
+                android:paddingBottom="1dp"
+                android:textColor="@color/app_txt"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sub_dialog_det"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub_dialog_name"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/app_txt_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sub_dialog_driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub_dialog_det"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/app_user_green_ico"
+                android:drawablePadding="3dp"
+                android:textColor="@color/app_txt_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sub_dialog_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/sub_dialog_driver"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/sub_dialog_driver"
+                android:drawableLeft="@drawable/tou_phone_ico"
+                android:drawablePadding="3dp"
+                android:textColor="@color/app_txt_gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sub_dialog_addre_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="上车地点："
+                android:textColor="@color/app_txt_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sub_dialog_addre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/sub_dialog_addre_tv"
+                android:layout_alignBottom="@id/sub_dialog_addre_tv"
+                android:textColor="@color/app_txt_green"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/sub_dialog_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub_dialog_addre_tv"
+                android:layout_marginTop="5dp"
+                android:text="上车时间："
+                android:textColor="@color/app_txt_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sub_dialog_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/sub_dialog_time_tv"
+                android:layout_below="@id/sub_dialog_addre_tv"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/app_txt_green"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/sub_dialog_time_det"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sub_dialog_time_tv"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/app_txt_gray"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/App_Line_Style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sub_dialog_no"
+            style="@style/AppButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:paddingBottom="3dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="3dp"
+            android:text="再选选"
+            android:textColor="@color/app_txt"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/module_divider_color" />
+
+        <Button
+            android:id="@+id/sub_dialog_yes"
+            style="@style/AppButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:paddingBottom="3dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="3dp"
+            android:text="确定预约"
+            android:textColor="@color/app_txt_green"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

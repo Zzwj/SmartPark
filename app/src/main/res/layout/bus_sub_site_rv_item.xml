@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp">
+
+        <com.xcoder.smartpark.widget.view.CircleImageView
+            android:id="@+id/site_rv_item_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/app_blue_circle_ico" />
+
+        <TextView
+            android:id="@+id/site_rv_item_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="10人"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/site_rv_item_name"
+        android:layout_width="70dp"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="六里桥"
+        android:textColor="@color/app_txt"
+        android:textSize="12sp" />
+</LinearLayout>

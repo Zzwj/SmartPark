@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppLayoutStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="5dp"
+    android:paddingTop="15dp">
+
+    <com.xcoder.smartpark.widget.view.CircleImageView
+        android:visibility="gone"
+        android:id="@+id/tou_lv_item_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/app_lv_item_bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/tou_lv_item_name"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="张武器"
+            android:singleLine="true"
+            android:textColor="@color/app_txt"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tou_lv_item_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tou_lv_item_name"
+            android:layout_toRightOf="@id/tou_lv_item_name"
+            android:layout_alignLeft="@+id/tou_lv_item_timeico"
+            android:text="待确认"
+            android:textColor="@color/app_red_color"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/tou_lv_item_status_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tou_lv_item_status_tv"
+                style="@style/AppLvItemRedShapeStyle"
+                android:text="详细信息" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tou_lv_item_phoneico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tou_lv_item_name"
+            android:layout_marginTop="11dp"
+            android:paddingBottom="2dp"
+            android:src="@drawable/tou_phone_ico" />
+
+        <TextView
+            android:id="@+id/tou_lv_item_phone_tv"
+            android:singleLine="true"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tou_lv_item_phoneico"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/tou_lv_item_phoneico"
+            android:text="18678868693"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/tou_lv_item_timeico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tou_lv_item_phone_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tou_lv_item_phone_tv"
+            android:paddingBottom="2dp"
+            android:src="@drawable/tou_phone_time_ico" />
+
+        <TextView
+            android:id="@+id/tou_lv_item_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tou_lv_item_timeico"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/tou_lv_item_timeico"
+            android:text="2016.12.12  10:00"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppLayoutStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="5dp"
+    android:paddingTop="15dp">
+
+    <com.xcoder.smartpark.widget.view.CircleImageView
+        android:id="@+id/use_lv_item_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/use_guests_ico"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        >
+
+        <!--    <TextView
+            android:id="@+id/use_lv_item_transmission_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/use_lv_item_plate_tv"
+            android:layout_alignBottom="@+id/use_lv_item_plate_tv"
+            android:layout_marginLeft="5dp"
+            android:text="自动挡"
+            android:textColor="@color/app_green_color"
+            android:textSize="11sp"
+            />-->
+
+        <TextView
+            android:id="@+id/use_lv_item_brand_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宝马"
+            android:layout_below="@+id/use_lv_item_car_tv"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/use_lv_item_vehicle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="520Li"
+            android:layout_toRightOf="@+id/use_lv_item_brand_tv"
+            android:layout_alignBottom="@+id/use_lv_item_brand_tv"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/app_gray_color"
+            />
+
+        <TextView
+            android:id="@+id/use_lv_item_color_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="黑色"
+            android:layout_toRightOf="@+id/use_lv_item_vehicle_tv"
+            android:layout_alignBottom="@+id/use_lv_item_brand_tv"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/app_gray_color"
+            />
+
+        <TextView
+            android:id="@+id/use_lv_item_explain_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本车为接待专用车辆，非接待行为请勿预约"
+            android:textSize="12sp"
+            android:textColor="@color/app_gray_color"
+            android:layout_below="@id/use_lv_item_brand_tv"
+            android:singleLine="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/use_lv_item_sub_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tou_lv_item_status_tv"
+                style="@style/AppLvItemGreenShapeStyle"
+                android:text="预约" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/use_lv_item_car_tv"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="接客专用车"
+            android:singleLine="true"
+            android:textColor="@color/app_green_color"
+            android:textSize="15sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/use_lv_item_plate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:text="京A58365  自动挡"
+            android:textColor="@color/app_green_color"
+            android:layout_alignBottom="@+id/use_lv_item_car_tv"
+            android:layout_toRightOf="@+id/use_lv_item_car_tv"
+            android:layout_toEndOf="@+id/use_lv_item_car_tv" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

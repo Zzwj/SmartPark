@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.xcoder.smartpark"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 2
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        debug {
+//            storeFile file("/Users/jiangkun/myproject/Android/Android_SmartPark/key/debug.keystore")
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testCompile 'junit:junit:4.12'
+    compile project(':XCoderAppLib')
+    compile project(':OutsideLib')
+    //----------------------//
+    compile "com.android.support:appcompat-v7:${supportVersion}"
+    compile "com.android.support:design:${supportVersion}"
+    //--------------------------------//
+    compile 'com.alibaba:fastjson:1.1.55.android'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('libs/minewBeaconScan.jar')
+    compile files('libs/WifiSdk_Android_v1.0.5.jar')
+}

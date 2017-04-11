@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_dialog_bg_shape"
+    android:orientation="vertical">
+    <!--    全局dialog-->
+    <TextView
+        android:id="@+id/app_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="标题"
+        android:textColor="@color/app_txt"
+        android:textSize="@dimen/app_txt_title_big" />
+
+    <View
+        android:id="@+id/app_dialog_linehor1"
+        style="@style/App_Line_Style" />
+
+    <TextView
+        android:id="@+id/app_dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:text="message"
+        android:textColor="@color/app_txt"
+        android:textSize="@dimen/app_txt_h1" />
+
+    <View
+        android:id="@+id/app_dialog_linehor2"
+        style="@style/App_Line_Style" />
+
+    <LinearLayout
+        android:id="@+id/app_dialog_buttonll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/app_dialog_buttonleft"
+            style="@style/AppButtonStyle"
+            android:layout_width="0dp"
+            android:textColor="@color/green"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button"
+             />
+
+        <View
+            android:id="@+id/app_dialog_linever"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+
+            android:background="@color/module_divider_color" />
+
+        <Button
+            android:id="@+id/app_dialog_buttonright"
+            style="@style/AppButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/green"
+            android:text="Button"
+             />
+    </LinearLayout>
+</LinearLayout>

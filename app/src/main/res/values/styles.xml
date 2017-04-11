@@ -1,0 +1,252 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_green_color</item>
+        <item name="colorPrimaryDark">@color/app_green_color</item>
+        <item name="colorAccent">@color/app_green_color</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppWriteTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/white</item>
+    </style>
+
+    <!-- popup的动画效果-->
+    <style name="AppPopupAnim">
+        <item name="android:windowEnterAnimation">@anim/message_popup_display
+        </item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/message_popup_exit</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+    <style name="OtherPopupAnim">
+        <item name="android:windowEnterAnimation">@anim/other_popup_diplay
+        </item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/other_popup_exit</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+
+    <style name="AppHead">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@color/app_head_color</item>
+    </style>
+
+    <!--后退按钮的图片style，app所有后退必须用这个-->
+    <style name="AppBlackImage">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:src">@drawable/app_leftarrow_ico</item>
+    </style>
+
+    <!--后退按钮layoutStyle，app所有后退必须用这个-->
+    <style name="AppBlackLayout">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/app_black_selector</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <!--App图片style，尽量用这个，限制好大小-->
+    <style name="AppImage">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+
+    <!--头部栏右边图片layout的按下效果，-->
+    <style name="AppHeadRightPress">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/app_black_selector</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--listvie的按下效果-->
+    <style name="AppListViewItemSelector">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/app_listview_selector</item>
+    </style>
+
+    <!--    app的横分割线-->
+    <style name="App_Line_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/module_divider_color</item>
+    </style>
+
+    <!--    app的横分割线-->
+    <style name="App_LineMarg_Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@color/module_divider_color</item>
+    </style>
+
+  <!--  Dialog的基本样式-->
+    <style name="AppDialog" parent="AppTheme">
+        <item name="android:backgroundDimEnabled">true</item><!--去掉背景效果-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景效果为透明-->
+    </style>
+
+
+    <!--  app加载框的style-->
+    <style name="AppProgressDialogStyle" parent="AppDialog">
+
+        <item name="colorAccent">@color/app_green_color</item>
+    </style>
+
+
+    <!-- //////////////////// app的默认效果/////////////////////////////-->
+
+    <!--    AppButton的默认效果-->
+    <style name="AppButtonStyle">
+        <item name="android:background">@drawable/app_dialog_signbutton_selector</item>
+    </style>
+
+    <!--    App布局的默认效果-->
+    <style name="AppLayoutStyle">
+        <item name="android:background">@drawable/app_listview_selector</item>
+    </style>
+    <!--    ////////////////////app的默认效果-///////////////// -->
+
+
+    <!--
+     测试样式，不要删，
+     <style name="AppTheme.But" parent="Widget.AppCompat.Button">
+            <item name="colorButtonNormal">@color/blue</item>
+            <item name="colorControlHighlight">@color/red</item>
+            <item name="android:background">?attr/selectableItemBackground</item>
+        </style>
+
+        <style name="AppTheme.Bt" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+            <item name="colorButtonNormal">@color/white</item>
+            <item name="colorControlHighlight">@color/red</item>
+
+        </style>
+
+
+        <style name="Applayout" parent="Base.Widget.AppCompat.Button.ButtonBar.AlertDialog">
+            <item name="colorButtonNormal">@color/blue</item>
+            <item name="colorControlHighlight">@color/red</item>
+            &lt;!&ndash;  <item name="android:background">@drawable/app_btn_borderless_material</item>&ndash;&gt;
+            <item name="android:minWidth">64dp</item>
+            <item name="android:maxLines">2</item>
+            <item name="android:minHeight">@dimen/abc_alert_dialog_button_bar_height</item>
+            <item name="android:textColor">?attr/colorAccent</item>
+            <item name="android:background">@drawable/abc_btn_borderless_material</item>
+        </style>-->
+
+    <!--listview的基本样式-->
+    <style name="AppListViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:divider">@drawable/app_lv_divider</item>
+        <item name="android:dividerHeight">15dp</item>
+        <item name="android:footerDividersEnabled">true</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:scrollbarSize">3dp</item>
+        <item name="android:scrollbarThumbVertical">@color/app_green_color</item>
+    </style>
+
+
+    <!--Innerlistview的基本样式-->
+    <style name="InnerListViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:divider">@color/lv_divider_color</item>
+        <item name="android:dividerHeight">0.5dp</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:scrollbarSize">3dp</item>
+        <item name="android:scrollbarThumbVertical">@color/app_green_color</item>
+    </style>
+
+    <!--listview中使用的椭圆形的textview-->
+    <style name="AppLvItemShapeStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--listview中使用的椭圆形的textview[红色的]-->
+    <style name="AppLvItemRedShapeStyle" parent="AppLvItemShapeStyle">
+        <item name="android:background">@drawable/app_lv_item_red_selector</item>
+    </style>
+
+    <!--listview中使用的椭圆形的textview[绿色的]-->
+    <style name="AppLvItemGreenShapeStyle" parent="AppLvItemShapeStyle">
+        <item name="android:background">@drawable/app_lv_item_green_selector</item>
+    </style>
+
+    <!--listview中使用的椭圆形的textview[绿色的]-->
+    <style name="AppLvItemGrayShapeStyle" parent="AppLvItemShapeStyle">
+        <item name="android:background">@drawable/app_lv_item_gray_shape</item>
+    </style>
+
+    <!-- 头部栏，textview按下的效果-->
+    <style name="AppTitleTvClickStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/app_title_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/app_title_paddingRight</item>
+        <item name="android:background">@drawable/app_title_tv_selector</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/app_txt_title_min</item>
+    </style>
+
+    <!--   一般的条目的layoustyle-->
+    <style name="LinLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+    </style>
+
+    <!--   一般的条目的layoustyle-->
+    <style name="LinLayoutStyle.TouRegister">
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <!--  一般的条目的TextView的style-->
+    <style name="LinTextViewLayout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/app_txt</item>
+        <item name="android:textSize">@dimen/app_txt</item>
+    </style>
+
+
+    <style name="HomeImageStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:maxHeight">180dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+</resources>

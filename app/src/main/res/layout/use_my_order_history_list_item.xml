@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppLayoutStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="15dp">
+
+    <com.xcoder.smartpark.widget.view.CircleImageView
+        android:visibility="gone"
+        android:id="@+id/use_lv_item_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/use_guests_ico"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/future_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接客专用车"
+            android:textColor="@color/app_txt_green"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/future_item_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/future_item_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/future_item_name"
+            android:text="京A 58365 自动挡"
+            android:textColor="@color/app_txt_green"
+            android:textSize="11sp" />
+
+
+        <TextView
+            android:id="@+id/future_item_car_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/future_item_name"
+            android:layout_marginTop="3dp"
+            android:text="奔驰 s350 黑色"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/future_item_timeico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/future_item_car_det"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="1dp"
+            android:src="@drawable/tou_phone_time_ico" />
+
+        <TextView
+            android:id="@+id/future_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/future_item_timeico"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/future_item_timeico"
+            android:text="预约时间：2016年11月8日 19:30"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/future_item_end_time"
+            android:layout_below="@+id/future_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/future_item_timeico"
+            android:text="预约时间：2016年11月8日 19:30"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="11sp" />
+
+
+        <ImageView
+            android:id="@+id/future_item_peopleico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/future_item_end_time"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="2dp"
+            android:src="@drawable/app_user_green_ico" />
+
+        <TextView
+            android:id="@+id/future_item_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/future_item_peopleico"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/future_item_peopleico"
+            android:text="司机：张师傅"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/future_item_phoneico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/future_item_people"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/future_item_people"
+            android:paddingBottom="2dp"
+            android:src="@drawable/tou_phone_ico" />
+
+        <TextView
+            android:id="@+id/future_item_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/future_item_phoneico"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/future_item_phoneico"
+            android:text="18878898766"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="11sp" />
+
+
+
+        <!--右边部分-->
+        <LinearLayout
+            android:id="@+id/future_item_lookloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/future_item_cancel"
+                style="@style/AppLvItemGreenShapeStyle"
+                android:text="预约成功" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_below="@+id/future_item_lookloc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/future_item_status"
+                style="@style/AppLvItemGreenShapeStyle"
+                android:text="显示状态" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

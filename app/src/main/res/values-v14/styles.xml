@@ -1,0 +1,18 @@
+<resources>
+
+ <!--   4.x手机样式适配-->
+
+<!-- //////////////////// MD效果需要的Style/////////////////////////////-->
+
+
+    <!--    AppButton的MD扁平化水波纹-->
+    <style name="AppButtonStyle">
+        <item name="android:background">@drawable/app_dialog_signbutton_selector</item>
+    </style>
+
+    <!--    App布局的MD的扁平水波纹-->
+    <style name="AppLayoutStyle">
+        <item name="android:background">@drawable/app_listview_selector</item>
+    </style>
+    <!--    ////////////////////MD效果需要的Style-///////////////// -->
+</resources>

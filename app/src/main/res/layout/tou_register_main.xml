@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tou_register_top_rl"
+        style="@style/AppHead">
+
+        <LinearLayout
+            android:id="@+id/tou_register_black"
+            style="@style/AppBlackLayout">
+
+            <ImageView style="@style/AppBlackImage" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="预约登记"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_txt_title_big" />
+
+    </RelativeLayout>
+
+    <com.xcoder.lib.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinLayoutStyle">
+
+                <TextView
+                    style="@style/LinTextViewLayout"
+                    android:text="请填写访客信息" />
+            </LinearLayout>
+
+            <View
+                style="@style/App_Line_Style"
+                android:layout_height="20dp" />
+
+            <LinearLayout style="@style/LinLayoutStyle.TouRegister">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tou_register_name_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tou_register_name_tiet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="访客姓名："
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/app_txt"
+
+                        android:textSize="@dimen/app_txt" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <View style="@style/App_LineMarg_Style" />
+
+            <LinearLayout
+                android:id="@+id/tou_detail_phone_ll"
+                style="@style/LinLayoutStyle.TouRegister">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tou_register_phone_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tou_register_phone_tiet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="联系方式："
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/app_txt"
+
+                        android:textSize="@dimen/app_txt" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <View style="@style/App_LineMarg_Style" />
+
+            <LinearLayout style="@style/LinLayoutStyle.TouRegister">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tou_register_card_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tou_register_card_tiet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="身份证号："
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/app_txt"
+
+                        android:textSize="@dimen/app_txt" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <View style="@style/App_LineMarg_Style" />
+
+            <LinearLayout style="@style/LinLayoutStyle.TouRegister">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tou_register_wrok_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tou_register_wrok_tiet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="所属公司："
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/app_txt"
+
+                        android:textSize="@dimen/app_txt" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/App_Line_Style"
+                android:layout_height="20dp" />
+
+            <LinearLayout style="@style/LinLayoutStyle.TouRegister">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tou_register_thing_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tou_register_thing_tiet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="拜访事项："
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/app_txt"
+
+                        android:textSize="@dimen/app_txt" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <View style="@style/App_LineMarg_Style" />
+
+            <RelativeLayout
+                android:id="@+id/tou_register_time_iv"
+                style="@style/LinLayoutStyle">
+
+                <TextView
+                    android:id="@+id/tou_register_time_tv"
+                    style="@style/LinTextViewLayout"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/app_txt"
+                    android:text="拜访时间：" />
+
+                <TextView
+                    android:id="@+id/tou_register_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tou_register_time_tv"
+                    android:layout_marginLeft="10dp"
+                    android:hint="请点击右边的日历选择时间"
+                    android:textColorHint="@color/app_txt_gray"
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/app_calendar" />
+            </RelativeLayout>
+
+            <View style="@style/App_LineMarg_Style" />
+
+            <LinearLayout style="@style/LinLayoutStyle.TouRegister">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tou_register_number_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tou_register_number_tiet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:background="@null"
+                        android:hint="到访人数："
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/app_txt"
+
+                        android:textSize="@dimen/app_txt" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/App_Line_Style"
+                android:layout_height="20dp" />
+
+
+            <LinearLayout style="@style/LinLayoutStyle.TouRegister">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tou_register_car_cared_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tou_register_car_cared_tiet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="车牌号："
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/app_txt"
+
+                        android:textSize="@dimen/app_txt" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <View style="@style/App_LineMarg_Style" />
+
+            <LinearLayout style="@style/LinLayoutStyle.TouRegister">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/tou_register_remarks_til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tou_register_remarks_tiet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="备注："
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/app_txt"
+
+                        android:textSize="@dimen/app_txt" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <View style="@style/App_LineMarg_Style" />
+
+            <TextView
+                android:id="@+id/tou_register_submit"
+                style="@style/AppLvItemGreenShapeStyle"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="提交"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </com.xcoder.lib.view.ReboundScrollView>
+</LinearLayout>

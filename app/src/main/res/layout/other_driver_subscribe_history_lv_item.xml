@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/going_lajimsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/going_cartype_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_green_color"
+            android:text="公车"
+            />
+
+        <TextView
+            android:id="@+id/going_carnum_tv"
+            android:layout_toRightOf="@+id/going_cartype_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_green_color"
+            android:textSize="11sp"
+            android:text="京A00000  手动"
+            android:layout_alignBottom="@+id/going_cartype_tv"
+            />
+
+        <TextView
+            android:id="@+id/going_laji_tv"
+            android:layout_below="@+id/going_cartype_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="11sp"
+            android:text="指南者"
+            />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/history_time_tv"
+        android:layout_below="@+id/going_lajimsg"
+        android:drawableLeft="@drawable/tou_phone_time_ico"
+        android:drawablePadding="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/app_txt"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/history_time_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/history_time_tv"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/history_time_tv"
+        android:text="开始时间：2016年11月8日 19:30"
+        android:textColor="@color/app_txt_gray"
+        android:textSize="11sp" />
+
+
+    <TextView
+        android:id="@+id/history_time_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/history_time_begin"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/history_time_tv"
+        android:text="结束时间：2016年11月8日 19:30"
+        android:textColor="@color/app_txt_gray"
+        android:textSize="11sp" />
+
+    <TextView
+        android:drawableLeft="@drawable/app_user_green_ico"
+        android:drawablePadding="5dp"
+        android:id="@+id/history_people_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/history_time_end"
+        android:text="预约人:"
+        android:textColor="@color/app_txt_gray"
+        android:textSize="11sp" />
+
+
+    <TextView
+        android:id="@+id/history_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/history_people_tv"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/history_people_tv"
+        android:layout_marginRight="2dp"
+        android:text="张三"
+        android:textColor="@color/app_txt_gray"
+        android:textSize="11sp" />
+
+
+    <TextView
+        android:id="@+id/history_phone_tv"
+        android:drawableLeft="@drawable/tou_phone_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/history_people"
+        android:layout_alignBottom="@+id/history_people_tv"
+        android:text=""
+        android:textColor="@color/app_txt"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/history_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/history_phone_tv"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/history_phone_tv"
+        android:text="12379871238"
+        android:textColor="@color/app_txt_gray"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/history_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="完成出行"
+        android:textColor="@color/app_txt_green"
+        android:textSize="15sp" />
+</RelativeLayout>

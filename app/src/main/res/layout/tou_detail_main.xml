@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tou_detail_top_rl"
+        style="@style/AppHead">
+
+        <LinearLayout
+            android:id="@+id/tou_detail_black"
+            style="@style/AppBlackLayout">
+
+            <ImageView style="@style/AppBlackImage" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="访客信息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_txt_title_big" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tou_detail_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            style="@style/App_Line_Style"
+            android:background="@color/app_green_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tou_detail_refuse"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="拒绝"
+                android:textColor="@color/app_txt_green"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tou_detail_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/app_green_color"
+                android:gravity="center"
+                android:text="接受"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.xcoder.lib.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tou_detail_bottom_ll"
+        android:layout_below="@+id/tou_detail_top_rl"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/LinLayoutStyle">
+
+                <TextView
+                    style="@style/LinTextViewLayout"
+                    android:text="访客信息" />
+            </LinearLayout>
+
+            <View
+                style="@style/App_Line_Style"
+                android:layout_height="20dp" />
+
+            <LinearLayout style="@style/LinLayoutStyle">
+
+                <TextView
+                    style="@style/LinTextViewLayout"
+                    android:text="访客姓名" />
+
+                <TextView
+                    android:id="@+id/tou_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+            </LinearLayout>
+
+            <View style="@style/App_LineMarg_Style" />
+
+            <LinearLayout
+                android:id="@+id/tou_detail_phone_ll"
+                style="@style/LinLayoutStyle">
+
+                <TextView
+                    style="@style/LinTextViewLayout"
+                    android:text="联系方式" />
+
+                <TextView
+                    android:id="@+id/tou_detail_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+
+                <ImageView
+                    android:id="@+id/tou_detail_phone_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/tou_phone_ico" />
+            </LinearLayout>
+
+            <View style="@style/App_LineMarg_Style" />
+
+            <LinearLayout style="@style/LinLayoutStyle">
+
+                <TextView
+                    style="@style/LinTextViewLayout"
+                    android:text="身份证号" />
+
+                <TextView
+                    android:id="@+id/tou_detail_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+            </LinearLayout>
+
+            <View style="@style/App_LineMarg_Style" />
+
+            <LinearLayout style="@style/LinLayoutStyle">
+
+                <TextView
+                    style="@style/LinTextViewLayout"
+                    android:text="所属公司" />
+
+                <TextView
+                    android:id="@+id/tou_detail_wrok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+            </LinearLayout>
+
+            <View
+                style="@style/App_Line_Style"
+                android:layout_height="20dp" />
+
+            <LinearLayout style="@style/LinLayoutStyle">
+
+                <TextView
+                    style="@style/LinTextViewLayout"
+                    android:text="拜访事项" />
+
+                <TextView
+                    android:id="@+id/tou_detail_thing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+            </LinearLayout>
+
+            <View style="@style/App_LineMarg_Style" />
+
+            <LinearLayout style="@style/LinLayoutStyle">
+
+                <TextView
+                    style="@style/LinTextViewLayout"
+                    android:text="拜访时间" />
+
+                <TextView
+                    android:id="@+id/tou_detail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+            </LinearLayout>
+
+            <View style="@style/App_LineMarg_Style" />
+
+            <LinearLayout style="@style/LinLayoutStyle">
+
+                <TextView
+                    style="@style/LinTextViewLayout"
+                    android:text="到访人数" />
+
+                <TextView
+                    android:id="@+id/tou_detail_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+            </LinearLayout>
+
+            <View
+                style="@style/App_Line_Style"
+                android:layout_height="20dp" />
+
+
+            <LinearLayout style="@style/LinLayoutStyle">
+
+                <TextView
+                    style="@style/LinTextViewLayout"
+                    android:text="车牌号    " />
+
+                <TextView
+                    android:id="@+id/tou_detail_car_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+            </LinearLayout>
+
+            <View style="@style/App_LineMarg_Style" />
+
+            <LinearLayout style="@style/LinLayoutStyle">
+
+                <TextView
+                    style="@style/LinTextViewLayout"
+                    android:text="备注        " />
+
+                <TextView
+                    android:id="@+id/tou_detail_remarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="无"
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.xcoder.lib.view.ReboundScrollView>
+</RelativeLayout>

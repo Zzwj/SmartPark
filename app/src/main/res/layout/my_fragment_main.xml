@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/AppHead">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_txt_title_big" />
+
+        <LinearLayout
+            android:id="@+id/my_mysetting_iv"
+            style="@style/AppHeadRightPress"
+           >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/login_setting_ico" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <com.xcoder.smartpark.widget.view.CircleImageView
+            android:id="@+id/my_main_head_cir"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/my_defaulthead_ico" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/my_main_head_cir"
+            android:layout_alignTop="@+id/my_main_head_cir"
+            android:layout_toRightOf="@+id/my_main_head_cir"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/my_main_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王齐齐"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/my_edit_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/my_main_name_tv"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/my_edit_ico" />
+
+            <TextView
+                android:id="@+id/my_edit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/my_edit_iv"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/my_edit_iv"
+                android:text="编辑资料"
+                android:textColor="@color/app_green_color"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/my_message_rl"
+            android:layout_width="match_parent"
+            style="@style/AppLayoutStyle"
+            android:layout_height="50dp">
+
+
+            <ImageView
+                android:id="@+id/my_msg_iv"
+               style="@style/AppImage"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/my_msg_ico" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/app_reddot_ico" />
+
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/my_msg_iv"
+                android:text="我的公告"
+                android:textColor="@color/app_gray_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <View
+            style="@style/App_Line_Style"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/my_money_rl"
+            android:layout_width="match_parent"
+            style="@style/AppLayoutStyle"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/my_wallet_iv"
+                style="@style/AppImage"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/my_wallet_ico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/my_wallet_iv"
+                android:text="我的钱包"
+                android:textColor="@color/app_gray_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xcoder.smartpark">
+
+    <!-- 访问互联网权限 -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RFEAD_LOGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <!-- 调用系统震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCEwifiSS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户。 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据。 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 用于评论模块分享位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于评论模块分享位置信息 -->
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="com.tencent.mtt.extension.Player" />
+    <!-- 电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 极光推送所需权限开始 -->
+    <permission
+        android:name="com.xcoder.smartpark.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.xcoder.smartpark.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <!-- 极光推送权限结束 -->
+
+    <!-- wifisdk start-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- wifisdk end-->
+    <application
+        android:name=".app.SmartParkApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.GuidePageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateVisible|adjustResize"> <!-- 登陆 -->
+        </activity>
+        <activity
+            android:name=".activity.tou.TouDetailActivity"
+            android:screenOrientation="portrait"> <!-- 访客详情 -->
+        </activity>
+        <activity
+            android:name=".activity.tou.TouRegisterActivity"
+            android:screenOrientation="portrait"> <!-- 预约登记 -->
+        </activity>
+        <activity
+            android:name=".activity.my.MySettingActivity"
+            android:screenOrientation="portrait"> <!-- 我的，设置 -->
+        </activity>
+        <activity
+            android:name=".activity.my.MyInfoActivity"
+            android:screenOrientation="portrait"> <!-- 我的信息 -->
+        </activity>
+        <activity
+            android:name=".activity.my.MyMoneyActivity"
+            android:screenOrientation="portrait"> <!-- 我的信息 -->
+        </activity>
+        <!--
+            <activity
+            android:name=".activity.bus.BusWrokDetailActivity"
+            android:screenOrientation="portrait">&lt;!&ndash;班车-工作-详细&ndash;&gt;</activity>
+        -->
+        <activity
+            android:name=".activity.bus.BusMyOrderActivity"
+            android:screenOrientation="portrait"> <!-- 班车-我的预约 -->
+        </activity>
+        <activity
+            android:name=".activity.use.UseMyOrderActivity"
+            android:screenOrientation="portrait"> <!-- 用车-我的预约 -->
+        </activity>
+        <activity
+            android:name=".activity.use.UseSubscribeActivity"
+            android:screenOrientation="portrait"> <!-- 用车-预约详情 -->
+        </activity>
+        <activity
+            android:name=".activity.bus.BusSubscribeActivity"
+            android:screenOrientation="portrait"> <!-- 班车-预约详情 -->
+        </activity>
+        <activity
+            android:name=".activity.other.PatrolManActivity"
+            android:screenOrientation="portrait"></activity>
+        <!--
+            <activity
+            android:name=".activity.bus.BusLongSubscribeActivity"
+            android:screenOrientation="portrait">&lt;!&ndash;班车长期预约详情&ndash;&gt;</activity>
+        -->
+
+        <activity
+            android:name=".activity.bus.BusTagActivity"
+            android:screenOrientation="portrait"> <!-- 班车-常住地标注 -->
+        </activity>
+        <activity
+            android:name=".activity.bus.BusMyOrderLocationActivity"
+            android:screenOrientation="portrait"> <!-- 班车-实时位置 -->
+        </activity>
+        <activity
+            android:name=".activity.use.UseCarLocationActivity"
+            android:screenOrientation="portrait"> <!-- 用车-我的预约-车辆位置 -->
+        </activity>
+        <activity
+            android:name=".activity.other.UseAuditActivity"
+            android:screenOrientation="portrait"> <!-- 用车-用车审核 -->
+        </activity>
+        <activity
+            android:name=".activity.other.UseAuditCarLocationActivity"
+            android:screenOrientation="portrait"> <!-- 用车-车辆位置核 -->
+        </activity>
+        <activity
+            android:name=".activity.other.BusDriverActivity"
+            android:screenOrientation="portrait"> <!-- 公车司机 -->
+        </activity>
+        <activity
+            android:name=".activity.other.BusDriverSubscribeActivity"
+            android:screenOrientation="portrait"> <!-- 其他>>公车司机>>预约信息 -->
+        </activity>
+        <activity
+            android:name=".activity.other.BusDriverLocationActivity"
+            android:screenOrientation="portrait"> <!-- 其他>>公车司机>>上传车辆位置 -->
+        </activity>
+        <activity
+            android:name=".activity.other.BLEActivity"
+            android:screenOrientation="portrait"> <!-- 其他>>资产盘点页面 -->
+        </activity>
+        <activity
+            android:name=".activity.other.demo.BLEMainActivity"
+            android:screenOrientation="portrait"> <!-- 其他>>资产盘点页面 -->
+        </activity>
+        <activity
+            android:name=".activity.other.demo.BLEListActivity"
+            android:screenOrientation="portrait"> <!-- 其他>>资产列表 -->
+        </activity>
+
+        <activity
+            android:name=".activity.HtmlActivity"
+            android:screenOrientation="portrait"> <!-- 通用html页面 -->
+        </activity>
+        <activity
+            android:name=".activity.my.MyMessageActivity"
+            android:screenOrientation="portrait"> <!-- 我得公告 -->
+        </activity>
+        <activity
+            android:name=".activity.my.MyMessageDetailActivity"
+            android:screenOrientation="portrait"> <!-- 公告详情 -->
+        </activity>
+
+        <activity
+            android:name=".activity.home.HomeSelectActivity"
+            android:screenOrientation="portrait"><!-- 班车，用车，访客选择-->
+        </activity>
+
+        <activity
+            android:name=".activity.tou.TouListActivity"
+            android:screenOrientation="portrait"><!-- 访客-->
+        </activity>
+        <activity
+            android:name=".activity.bus.BusListActivity"
+            android:screenOrientation="portrait"><!-- 班车-->
+        </activity>
+        <activity
+            android:name=".activity.use.UseListActivity"
+            android:screenOrientation="portrait"><!-- 用车-->
+        </activity>
+
+        <!-- 以下为极光推送 -->
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.xcoder.smartpark" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- Required  显示通知栏 -->
+                <category android:name="com.xcoder.smartpark" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="c4e7f578769ad8daf4491c87" /> <!-- </>值来自开发者平台取得的AppKey -->
+        <!-- 极光推送结束 -->
+
+
+        <!-- 友盟分享 -->
+
+
+        <!--<meta-data-->
+            <!--android:name="UMENG_APPKEY"-->
+            <!--android:value="585248b545297d45d8001538" >-->
+        <!--</meta-data>-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 友盟分享 -->
+
+        <!-- 高德 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b7ea6bc8c627cedc2246a11d8a7a1dda" />
+
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 高德 -->
+
+
+
+
+    </application>
+
+</manifest>

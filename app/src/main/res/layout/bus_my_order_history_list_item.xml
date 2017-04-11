@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppLayoutStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="15dp">
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/have_lv_item_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bus_ico" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/have_lv_item_long"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/have_lv_item_name"
+            android:src="@drawable/bus_my_order_long_ico"
+            />
+
+        <TextView
+            android:id="@+id/have_lv_item_name"
+            android:layout_toRightOf="@+id/have_lv_item_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="1号路线班车"
+            android:textColor="@color/app_txt"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/have_lv_item_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/have_lv_item_name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/have_lv_item_name"
+            android:text="六里桥--和园区"
+            android:textColor="@color/app_txt"
+            android:textSize="11sp" />
+
+
+        <TextView
+            android:id="@+id/have_lv_item_car_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/have_lv_item_name"
+            android:layout_marginTop="3dp"
+            android:text="大巴 京B 31232 白色"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/have_lv_item_timeico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/have_lv_item_car_det"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="1dp"
+            android:src="@drawable/tou_phone_time_ico" />
+
+        <TextView
+            android:id="@+id/have_lv_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/have_lv_item_timeico"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/have_lv_item_timeico"
+            android:text="预约时间：2016年11月8日 19:30"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/have_lv_item_peopleico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/have_lv_item_timeico"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="2dp"
+            android:src="@drawable/app_user_green_ico" />
+
+        <TextView
+            android:id="@+id/have_lv_item_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/have_lv_item_peopleico"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/have_lv_item_peopleico"
+            android:text="司机：张师傅"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/have_lv_item_phoneico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/have_lv_item_people"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/have_lv_item_people"
+            android:paddingBottom="2dp"
+            android:src="@drawable/tou_phone_ico" />
+
+        <TextView
+            android:id="@+id/have_lv_item_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/have_lv_item_phoneico"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/have_lv_item_phoneico"
+            android:text="18878898766"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="11sp" />
+
+
+        <!--右边部分-->
+        <TextView
+            android:id="@+id/have_lv_item_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/app_txt"
+            android:textSize="13sp"
+            android:text="上车站点：紫竹林" />
+
+
+    </RelativeLayout>
+</LinearLayout>

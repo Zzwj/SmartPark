@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/release_image_popup_t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="从相册选择"
+        android:textColor="@color/app_txt" />
+
+    <View
+       style="@style/App_Line_Style"/>
+
+    <TextView
+        android:id="@+id/release_image_popup_t2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="拍照"
+        android:textColor="@color/app_txt" />
+
+    <View
+        style="@style/App_Line_Style"/>
+
+    <TextView
+        android:id="@+id/release_image_popup_t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="取消"
+        android:textColor="@color/app_txt" />
+
+</LinearLayout>

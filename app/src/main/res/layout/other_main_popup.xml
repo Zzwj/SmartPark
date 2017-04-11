@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/other_main_popup_shape"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/other_patrol_man_ll"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/app_orange_circle_ico"
+        android:padding="13dp"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="巡更路线"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other_money_ll"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:background="@drawable/app_orange_circle_ico"
+        android:padding="13dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="资产盘点"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/other_audit_ll"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/app_orange_circle_ico"
+        android:padding="13dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="用车审批"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/other_driver_ll"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/app_orange_circle_ico"
+        android:padding="13dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="公车司机"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/other_bus_ll"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:background="@drawable/app_orange_circle_ico"
+        android:padding="13dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="班车信息"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/other_user_ll"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/app_orange_circle_ico"
+        android:padding="13dp"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:text="人员定位"
+            android:layout_gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bus_tag_top_rl"
+        style="@style/AppHead">
+
+        <LinearLayout
+            android:id="@+id/bus_tag_black"
+            style="@style/AppBlackLayout">
+
+            <ImageView style="@style/AppBlackImage" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="常住地标注"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_txt_title_big" />
+
+        <TextView
+            android:id="@+id/bus_tag_submit"
+            style="@style/AppTitleTvClickStyle"
+            android:layout_alignParentRight="true"
+            android:text="保存" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/bus_tag_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/bus_tag_loca_ll"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/app_button_selector"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/app_loca_ico" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/bus_tag_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/app_edittext_border_shape"
+                    android:hint="输入地址搜索或点击地图标注"
+                    android:padding="7dp"
+                    android:textColor="@color/app_txt"
+                    android:textColorHint="@color/app_txt_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/bus_tag_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F2ffffff"
+                android:divider="@color/lv_divider_color"
+                android:dividerHeight="0.5dp"
+                android:scrollbarSize="3dp"
+                android:scrollbarThumbVertical="@color/app_green_color"></ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

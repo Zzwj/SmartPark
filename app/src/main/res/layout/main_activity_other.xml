@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_other_bt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/main_other"
+    android:layout_alignTop="@+id/main_other"
+    android:layout_toRightOf="@+id/main_other"
+    android:orientation="horizontal"
+    android:padding="7dp"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/other_patrol_man_ll"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/other_patrolline_ico"
+        android:gravity="center"
+        android:paddingBottom="9dp"
+        android:paddingLeft="11.5dp"
+        android:paddingRight="9dp"
+        android:paddingTop="9dp"
+        android:visibility="gone">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:text="巡更路线"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other_money_ll"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/other_count_ico"
+        android:gravity="center"
+        android:paddingBottom="9dp"
+        android:paddingLeft="11.5dp"
+        android:paddingRight="9dp"
+        android:paddingTop="9dp"
+        android:visibility="gone">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:text="资产盘点"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other_audit_ll"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/other_usecar_ico"
+        android:gravity="center"
+        android:paddingBottom="9dp"
+        android:paddingLeft="11.5dp"
+        android:paddingRight="9dp"
+        android:paddingTop="9dp"
+        android:visibility="gone">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:text="用车审批"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other_driver_ll"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/other_cardriver_ico"
+        android:gravity="center"
+        android:paddingBottom="9dp"
+        android:paddingLeft="11.5dp"
+        android:paddingRight="9dp"
+        android:paddingTop="9dp"
+        android:visibility="gone">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:text="公车司机"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other_bus_ll"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/other_busmsg_ico"
+        android:gravity="center"
+        android:paddingBottom="9dp"
+        android:paddingLeft="11.5dp"
+        android:paddingRight="9dp"
+        android:paddingTop="9dp"
+        android:visibility="gone">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:text="班车信息"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/other_user_ll"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/other_position_ico"
+        android:gravity="center"
+        android:paddingBottom="9dp"
+        android:paddingLeft="11.5dp"
+        android:paddingRight="9dp"
+        android:paddingTop="9dp"
+        android:visibility="gone">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:text="人员定位"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</LinearLayout>

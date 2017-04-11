@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/going_lajimsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/going_cartype_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_green_color"
+            android:text="公车"
+            />
+
+        <TextView
+            android:id="@+id/going_carnum_tv"
+            android:layout_toRightOf="@+id/going_cartype_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_green_color"
+            android:textSize="11sp"
+            android:text="京A00000  手动"
+            android:layout_alignBottom="@+id/going_cartype_tv"
+            />
+
+        <TextView
+            android:id="@+id/going_laji_tv"
+            android:layout_below="@+id/going_cartype_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_txt_gray"
+            android:textSize="11sp"
+            android:text="指南者"
+            />
+
+        <TextView
+            android:id="@+id/going_action_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="状态显示"
+            android:textColor="@color/app_green_color"
+            android:paddingRight="20dp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/going_time_tv"
+        android:layout_below="@+id/going_lajimsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="0dp"
+        android:text=""
+        android:drawableLeft="@drawable/tou_phone_time_ico"
+        android:textColor="@color/app_txt_green"
+        android:textSize="0sp" />
+
+    <TextView
+        android:id="@+id/going_time_begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/going_time_tv"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/going_time_tv"
+        android:text="开始时间：2016年11月8日 19:30"
+        android:textColor="@color/app_txt_gray"
+        android:textSize="11sp" />
+
+
+    <TextView
+        android:id="@+id/going_time_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/going_time_begin"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/going_time_tv"
+        android:text="结束时间：2016年11月8日 19:30"
+        android:textColor="@color/app_txt_gray"
+        android:textSize="11sp" />
+
+
+    <TextView
+        android:id="@+id/going_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/going_people_tv"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/going_people_tv"
+        android:text="张三"
+        android:textColor="@color/app_txt_gray"
+        android:textSize="11sp" />
+
+
+    <TextView
+        android:id="@+id/going_phone_tv"
+        android:drawableLeft="@drawable/tou_phone_ico"
+        android:drawablePadding="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/going_people"
+        android:layout_alignBottom="@+id/going_people"
+        android:text=""
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/app_txt_gray"
+        android:textSize="11sp" />
+
+
+    <TextView
+        android:id="@+id/going_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/going_phone_tv"
+        android:layout_toRightOf="@+id/going_phone_tv"
+        android:text="12379871238"
+        android:textColor="@color/app_txt_gray"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:id="@+id/going_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tou_lv_item_status_tv"
+            style="@style/AppLvItemGreenShapeStyle"
+            android:text="设置状态" />
+    </LinearLayout>
+    
+
+
+
+
+    <TextView
+        android:id="@+id/going_people_tv"
+        android:drawableLeft="@drawable/app_user_green_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="0dp"
+        android:text="预约人:"
+        android:textColor="@color/app_txt_gray"
+        android:textSize="11sp"
+        android:layout_below="@+id/going_time_end"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

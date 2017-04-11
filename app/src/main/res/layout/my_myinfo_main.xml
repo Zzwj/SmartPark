@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/AppHead">
+
+        <LinearLayout
+            android:id="@+id/my_setting_back_iv"
+            style="@style/AppBlackLayout">
+
+            <ImageView style="@style/AppBlackImage" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人信息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_txt_title_big" />
+    </RelativeLayout>
+
+    <com.xcoder.lib.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_green_color">
+
+                <com.xcoder.smartpark.widget.view.CircleImageView
+                    android:id="@+id/my_myinfo_header_iv"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/my_myinfo_head_ico" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_myinfo_bt_border_shape">
+
+                <TextView
+                    android:id="@+id/my_myinfo_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="姓名"
+                    android:textColor="@color/app_txt"
+                    android:textSize="@dimen/app_txt_h1" />
+
+                <EditText
+                    android:id="@+id/my_myinfo_name_et"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/app_txt_gray"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/my_myinfo_name_tv"
+                    android:background="@color/white"
+                    android:hint="请输入姓名"
+                    android:singleLine="true"
+                    android:textColorHint="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_myinfo_bt_border_shape">
+
+                <TextView
+                    android:id="@+id/my_myinfo_gender_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="性别"
+                    android:textColor="@color/app_txt"
+                    android:textSize="@dimen/app_txt_h1" />
+
+                <RadioGroup
+                    android:id="@+id/my_myinfo_gender_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/my_myinfo_rb_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/my_myinfo_gender_selector"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="男"
+                        android:textColor="@color/app_txt_gray" />
+
+                    <RadioButton
+                        android:id="@+id/my_myinfo_rb_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:button="@null"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/my_myinfo_gender_selector"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="女"
+                        android:textColor="@color/app_txt_gray" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_myinfo_company_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_myinfo_bt_border_shape">
+
+                <TextView
+                    android:id="@+id/my_myinfo_company_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="公司"
+                    android:textColor="@color/app_txt"
+                    android:textSize="@dimen/app_txt_h1" />
+
+                <TextView
+                    android:id="@+id/my_myinfo_showcompany_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/my_myinfo_company_tv"
+                    android:text=""
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+
+                <ImageView
+                    style="@style/AppImage"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/app_rightarrow_ico" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_myinfo_department_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_myinfo_bt_border_shape">
+
+                <TextView
+                    android:id="@+id/my_myinfo_department_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="部门"
+                    android:textColor="@color/app_txt"
+                    android:textSize="@dimen/app_txt_h1" />
+
+                <TextView
+                    android:id="@+id/my_myinfo_showdepartment_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/my_myinfo_department_tv"
+                    android:text=""
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+
+                <ImageView
+                    style="@style/AppImage"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/app_rightarrow_ico" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_myinfo_job_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_myinfo_bt_border_shape">
+
+                <TextView
+                    android:id="@+id/my_myinfo_job_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="职务"
+                    android:textColor="@color/app_txt"
+                    android:textSize="@dimen/app_txt_h1" />
+
+                <TextView
+                    android:id="@+id/my_myinfo_showjob_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/my_myinfo_job_tv"
+                    android:text=""
+                    android:textColor="@color/app_txt_gray"
+                    android:textSize="@dimen/app_txt_h1" />
+
+                <ImageView
+                    style="@style/AppImage"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/app_rightarrow_ico" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_myinfo_id_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_myinfo_bt_border_shape">
+
+                <TextView
+                    android:id="@+id/my_myinfo_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="工号"
+                    android:textColor="@color/app_txt"
+                    android:textSize="@dimen/app_txt_h1" />
+
+                <EditText
+                    android:id="@+id/my_myinfo_number_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/my_myinfo_number_tv"
+                    android:textColor="@color/app_txt_gray"
+                    android:background="@color/white"
+                    android:hint="请输入工号"
+                    android:textColorHint="@color/app_txt_gray"
+                    android:singleLine="true"
+                    android:textSize="@dimen/app_txt_h1" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_myinfo_submit_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/my_myinfo_bt_no_border_shape">
+
+                <TextView
+                    android:id="@+id/my_myinfo_submit_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="15dp"
+                    android:text="提  交"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.xcoder.lib.view.ReboundScrollView>
+</LinearLayout>
